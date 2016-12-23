@@ -1,0 +1,222 @@
+header, main, nav, footer, figure, figcaption, aside, section, article {display:block;}
+body { 
+		background-image: linear-gradient(to bottom, #FFFFFF, #4F6D93); 	/* Linear gradient to mix white and blue background. Note: This does not work well in Chrome or IE. */
+		color: #4F6D93; 	/* blue text */
+		font-family: Arial, Helvetica, sans-serif; 	/* Arial, Helvetica or sans-serif font typeface */
+		background-repeat: no-repeat; 
+}
+header {
+		background-color: #000033; 	/* Black background */
+		background-image: url(sunset.jpg); 	/* Uses background image called sunset */
+		background-position: right; 	
+		background-repeat: no-repeat; 	
+		height: 60px;
+		padding-top: 15px;
+		text-align: center;
+}
+nav { 
+		float: left;
+		width: 160px;
+		font-weight: bold;	 /*Bold text */
+		padding: 20px;
+}
+nav a:link {	/* default or unvisited navigation hyperlink */
+		color: #000033;
+}
+nav a:visited {		/* visited navigation hyperlink */
+		color: #344873;
+}
+nav	a:hover {	/* mouse over hyperlink */
+		color: #FFFFFF;
+}
+nav ul {	/* Lists the navigation menu vertically */
+		list-style-type: none; 
+		margin: 0; 
+		padding-left: 0; 
+		font-size: 1.2em;
+}
+main {
+		background-color: #FFFFFF; 	/* white background */
+		margin-left: 190px;
+		padding: 1px 20px 20px 30px;
+		display: block;
+}
+a {
+		text-decoration: none; 	/* Eliminates underline for hyperlinks */
+} 	
+h1 { 
+		color: #FFFFFF; 	/* White text */
+		margin-bottom:0; 	/* Gets rid of the empty space between the header area and the navigation area */
+		font-family: Georgia, "Times New Roman", serif; 	/* Georgia, Times New Roman or serif font typeface */
+		margin-top: 0;
+}
+h2 { 
+		color: #3399CC; 	/* Medium blue text */
+		font-family: Georgia, "Times New Roman", serif;
+		text-shadow: 1px 1px 0 #CCCCCC;
+}
+h3 { 
+		color: #000033; 	/* Black text */
+		font-family: Georgia, "Times New Roman", serif; 	
+}
+main ul {	/* Configures the list in the main area */
+		list-style-image: url(marker.gif); 	/* Uses image called marker as the ist marker */
+}
+dt { 
+		color: #000033; 	/* Dark blue text */
+}
+footer {
+		margin-left: 190px;
+		background-color: #FFFFFF; 	/* white background */
+		font-size: 75%; 
+		font-style: italic;
+		text-align: center;
+		font-family: Georgia, "Times New Roman", serif; 
+		padding: 20px;
+}
+.resort {
+		color: #5C7FA3; 	/* Assigns dark blue text to a class called "resort" */
+		font-weight: bold;
+} 
+#contact { 	/* Assigns font-size to id called contact */
+		font-size: 90%;
+}
+#wrapper { 	/* Creating a box and assigning to an id so we can put content there */
+		margin-left: auto;
+		margin-right: auto;
+		width: 80%;
+		min-width: 960px;
+		max-width: 2048px;
+		background-color: #90C7E3;
+		box-shadow: 3px 3px 0 #333333;
+}
+#homehero { /* Creating an id with the image coasthero */
+		background-image: url(coasthero.jpg);
+		height: 300px;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		margin-left: 190px;
+}
+#yurthero { /* Creating an id with the image yurthero */
+		background-image: url(yurthero.jpg);
+		height: 300px;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		margin-left: 190px;
+}
+#trailhero { /* Creating an id with the image trailhero */
+		background-image: url(trailhero.jpg);
+		height: 300px;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		margin-left: 190px;
+}
+#mobile {
+		display:none;
+}
+#desktop {
+		display: inline;
+}
+table {
+		border: 1px solid #3399CC;
+		border-spacing: 0;
+}
+td, th {
+		padding: 5px; 
+		border: 1px solid #3399CC;
+}
+td {
+		text-align: center;
+}
+.text {
+		text-align: left;
+}
+tr:nth-of-type(even) {
+		background-color: #F5FAFC;
+}
+@media only screen and (max-width: 64em) {		
+		body {
+				margin: 0; 
+				background-color: #FFFFFF;
+		}
+		#wrapper {
+				min-width: 0;
+				width: auto;
+				box-shadow: none;
+		}
+		main {
+				margin-left: 0;
+		}
+		nav {
+				float: none;
+				width: auto;
+				text-align: center;
+				padding: 0.5em;
+		}
+		nav li {
+				display: inline-block;
+				padding-top: 0.25em;
+				padding-bottom: 0.25em;
+				padding-left: 0.75em;
+				padding-right: 0.75em;
+		}
+		#homehero {
+				margin: 0;
+				height: 200px;
+		}
+		#yurthero {
+				margin: 0;
+				height: 200px;
+		}
+		#trailhero {
+				margin: 0;
+				height: 200px;
+		}
+		footer {
+				margin-left: 0;
+		}
+}
+@media only screen and (max-width: 37.5em) {
+		header {
+				padding-top: 1em;
+		}
+		main {
+				padding-top: 0.1em;
+				padding-bottom: 0.1em;
+				padding-left: 1em;
+				padding-right: 1em;
+				font-size: 90%;
+		}
+		h1 {
+				font-size: 1.5em;
+		}
+		nav {
+				padding: 0;
+		}
+		nav li {
+				display: block;	
+				margin: 0;
+				border-bottom: 2px ridge #330000;
+		}
+		nav a {
+				display: block;
+		}
+		#homehero {
+				background-image: none;
+				height: 0;
+		}
+		#yurthero {
+				background-image: none;
+				height: 0;
+		}
+		#trailhero {
+				background-image: none;
+				height: 0;
+		}
+		#mobile {
+				display: inline;
+		}
+		#desktop {
+				display: none;
+		}
+}
